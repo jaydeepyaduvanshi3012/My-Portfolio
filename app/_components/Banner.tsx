@@ -48,7 +48,7 @@ const Banner = () => {
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
                         Hi! I&apos;m{' '}
                         <span className="font-medium text-foreground">
-                            Tajmirul
+                            JAYDEEP
                         </span>
                         . A creative Frontend Developer with 3+ years of
                         experience in building high-performance, scalable, and

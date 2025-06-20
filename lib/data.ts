@@ -1,63 +1,35 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
-
+    email: 'jaydeepyaduvanshi8@gmail.com',
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
-
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    emailBody: 'Hi JAYDEEP YADUVANSHI, I am reaching out to you because...',
+    oldPortfolio: '',
+    upworkProfile: '',
+    phone: '+91 7007794612',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/JAYDEEPYADUVANSHI' },
 ];
 
 export const MY_STACK = {
     frontend: [
         {
+            name: 'HTML',
+            icon: '/logo/html.png',
+        },
+        {
+            name: 'CSS',
+            icon: '/logo/css.png',
+        },
+        {
             name: 'Javascript',
             icon: '/logo/js.png',
         },
         {
-            name: 'Typescript',
-            icon: '/logo/ts.png',
-        },
-        {
             name: 'React',
             icon: '/logo/react.png',
-        },
-        {
-            name: 'Next.js',
-            icon: '/logo/next.png',
-        },
-        {
-            name: 'Redux',
-            icon: '/logo/redux.png',
-        },
-        {
-            name: 'Tailwind CSS',
-            icon: '/logo/tailwind.png',
-        },
-        {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
-        },
-        {
-            name: 'Frammer Motion',
-            icon: '/logo/framer-motion.png',
-        },
-        {
-            name: 'SASS',
-            icon: '/logo/sass.png',
-        },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
         },
     ],
     backend: [
@@ -65,45 +37,21 @@ export const MY_STACK = {
             name: 'Node.js',
             icon: '/logo/node.png',
         },
-        {
-            name: 'Nest.js',
-            icon: '/logo/nest.svg',
-        },
-        {
-            name: 'Express.js',
-            icon: '/logo/express.png',
-        },
     ],
     database: [
         {
             name: 'MySQL',
             icon: '/logo/mysql.svg',
         },
-        {
-            name: 'PostgreSQL',
-            icon: '/logo/postgreSQL.png',
-        },
-        {
-            name: 'MongoDB',
-            icon: '/logo/mongodb.svg',
-        },
-        {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
-        },
     ],
     tools: [
         {
-            name: 'Git',
-            icon: '/logo/git.png',
+            name: 'GitHub',
+            icon: '/logo/github.png',
         },
         {
-            name: 'Docker',
-            icon: '/logo/docker.svg',
-        },
-        {
-            name: 'AWS',
-            icon: '/logo/aws.png',
+            name: 'Postman',
+            icon: '/logo/postman.png',
         },
     ],
 };
