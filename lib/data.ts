@@ -10,7 +10,7 @@ export const GENERAL_INFO = {
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/JAYDEEPYADUVANSHI' },
+    { name: 'github', url: 'https://github.com/jaydeepyaduvanshi3012' },
 ];
 
 export const MY_STACK = {
