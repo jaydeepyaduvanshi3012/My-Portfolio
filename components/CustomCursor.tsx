@@ -20,7 +20,7 @@ const CustomCursor = () => {
                 x: clientX,
                 y: clientY,
                 ease: 'power2.out',
-                duration: 0.25,
+                duration: 0.15,
                 opacity: 1,
             });
         }) as any;
