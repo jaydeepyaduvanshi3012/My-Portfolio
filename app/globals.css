@@ -55,3 +55,36 @@
         @apply pl-5 mt-2 list-disc;
     }
 }
+
+/* Neon Glow Effect */
+@keyframes neonGlow {
+    0% {
+        text-shadow: 
+            0 0 5px #00ff00,
+            0 0 10px #00ff00,
+            0 0 15px #00ff00,
+            0 0 20px #00ff00;
+        color: #00ff00;
+    }
+    50% {
+        text-shadow: 
+            0 0 10px #00ff00,
+            0 0 20px #00ff00,
+            0 0 30px #00ff00,
+            0 0 40px #00ff00;
+        color: #ffffff;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #00ff00,
+            0 0 10px #00ff00,
+            0 0 15px #00ff00,
+            0 0 20px #00ff00;
+        color: #00ff00;
+    }
+}
+
+.neon-glow {
+    animation: neonGlow 1s ease-in-out infinite;
+    font-weight: bold;
+}

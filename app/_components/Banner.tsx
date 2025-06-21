@@ -1,7 +1,6 @@
 'use client';
 import ArrowAnimation from '@/components/ArrowAnimation';
 import Button from '@/components/Button';
-import { GENERAL_INFO } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
@@ -33,6 +32,32 @@ const Banner = () => {
         { scope: containerRef },
     );
 
+    const handleHireMeClick = () => {
+        // Scroll to contact section
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+            
+            // Trigger neon glow effect after scroll
+            setTimeout(() => {
+                const emailElement = document.getElementById('contact-email');
+                const phoneElement = document.getElementById('contact-phone');
+                
+                if (emailElement && phoneElement) {
+                    // Add neon glow classes
+                    emailElement.classList.add('neon-glow');
+                    phoneElement.classList.add('neon-glow');
+                    
+                    // Remove neon glow after 3 seconds
+                    setTimeout(() => {
+                        emailElement.classList.remove('neon-glow');
+                        phoneElement.classList.remove('neon-glow');
+                    }, 3000);
+                }
+            }, 1000); // Wait for scroll to complete
+        }
+    };
+
     return (
         <section className="relative overflow-hidden" id="banner">
             <ArrowAnimation />
@@ -55,10 +80,7 @@ const Banner = () => {
                         responsive web solutions.
                     </p>
                     <Button
-                        as="link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={GENERAL_INFO.upworkProfile}
+                        onClick={handleHireMeClick}
                         variant="primary"
                         className="mt-9 banner-button slide-up-and-fade"
                     >

@@ -4,13 +4,16 @@ const Footer = () => {
             <div className="container">
                 <p className="text-lg">Have a project in mind?</p>
                 <a
+                    id="contact-email"
                     href="mailto:jaydeepyaduvanshi8@gmail.com"
-                    className="text-3xl sm:text-4xl font-anton inline-block mt-5 mb-10 hover:underline"
+                    className="text-3xl sm:text-4xl font-anton inline-block mt-5 mb-10 hover:underline transition-all duration-300"
                 >
                     jaydeepyaduvanshi8@gmail.com
                 </a>
                 <div className="mt-4 text-lg">
-                    <span>Phone: +91 7007794612</span>
+                    <span id="contact-phone" className="transition-all duration-300">
+                        Phone: +91 7007794612
+                    </span>
                 </div>
                 <div className="">
                     <a
